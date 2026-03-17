@@ -17,6 +17,10 @@ new features: |
   Support for configuring weights for locality zones.
 
 bug fixes: |
+<<<<<<< Updated upstream
+=======
+  Fixed ratelimit ConfigMap and HPA not having ownerReferences, causing them to be left behind as orphaned resources when the envoy-gateway Deployment is deleted.
+>>>>>>> Stashed changes
   Rejected ClientTrafficPolicy if invalid TLS cipher suites are configured.
   Fixed validation of XListenerSet certificateRefs
   Fixed XListenerSet not allowing xRoutes from the same namespace when configured to allow them
